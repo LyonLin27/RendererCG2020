@@ -16,7 +16,7 @@ float x = 0.0f;
 float inc = 0.01f;
 
 void init(GLFWwindow* window) {
-	renderingProgram = Utils::createShaderProgram("vs.glsl", "fs.glsl");
+	renderingProgram = Utils::createShaderProgram("src/data/vs.glsl", "src/data/fs.glsl");
 	glGenVertexArrays(numVAOs, vao);
 	glBindVertexArray(vao[0]);
 }
